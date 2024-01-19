@@ -1,0 +1,3 @@
+[submodule "component-docs"]
+	path = component-docs
+	url = git@github.com:bytecodealliance/component-docs.git
