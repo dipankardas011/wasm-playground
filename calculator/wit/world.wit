@@ -1,0 +1,12 @@
+
+// wit/world.wit
+package docs:calculator@0.1.1;
+
+interface calculate {
+    evalexpression: func(a: u32, b: u32) -> u32;
+}
+
+world calculator {
+    export calculate;
+    import docs:adder/add@0.1.0;
+}
