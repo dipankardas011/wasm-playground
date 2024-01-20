@@ -1,5 +1,12 @@
 # For multiple uses of wasm components
 
+for setup of the projects
+```bash
+cargo component new calculator --reactor
+cargo component new adder --reactor
+cargo component new runner
+```
+
 Refer:
 - https://component-model.bytecodealliance.org/creating-and-consuming/composing.html
 - https://component-model.bytecodealliance.org/language-support/rust.html#components-in-rust
