@@ -14,4 +14,5 @@ build: ## build the main.wasm
 .PHONY: run
 run: ## run the main.wasm to port 8080
 	# go install github.com/shurcooL/goexec
-	goexec 'http.ListenAndServe(`:8080`, http.FileServer(http.Dir(`.`)))'
+	# goexec 'http.ListenAndServe(`:8080`, http.FileServer(http.Dir(`.`)))'
+	go run http.go
