@@ -6,9 +6,12 @@ help: ## Display this help.
 
 ##@ Build
 .PHONY: build
-build: ## build the main.wasm
-	GOOS=js GOARCH=wasm go build -o main.wasm .
+basic-build: ## build the basic
+	GOOS=js GOARCH=wasm go build -o main.wasm basic.go
 
+.PHONY: image
+img-build: ## build the image
+	GOOS=js GOARCH=wasm go build -o main.wasm image.go
 
 ##@ Run
 .PHONY: run

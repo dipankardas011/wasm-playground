@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="wasm_exec.js"></script>
+		<script>
+			const go = new Go();
+			WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).
+			then((result) => {
+				go.run(result.instance);
+			});
+
+			function updatedHandler(value) {
+				document.getElementsByTagName("h1")[0].innerHTML = value;
+			}
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<h2>Data</h2>
+		<button type="button">Click me</button>
+	</body>
+</html>
