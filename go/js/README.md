@@ -1,4 +1,7 @@
-thanks to these resources
+## Webassembly simple usage
 
-https://www.youtube.com/watch?v=v8-yeWXCsi4
-https://pkg.go.dev/syscall/js
+> thanks to these resources
+
+[youtube](https://www.youtube.com/watch?v=v8-yeWXCsi4)
+[syscall/js](https://pkg.go.dev/syscall/js)
+[Go Wiki](https://github.com/golang/go/wiki/WebAssembly)
